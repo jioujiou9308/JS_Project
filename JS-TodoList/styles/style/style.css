@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.register {
+  height: 100vh;
+  display: flex;
+  background-color: rgb(228, 182, 77);
+}
+.register .left {
+  background: url(../../picture/logInSinUp.jpg);
+  height: 100vh;
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register .right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 500px;
+  height: 50vh;
+  margin: auto;
+  align-items: center;
+}
+.register .right label {
+  font-size: 1.5rem;
+}
+.register .right .AccountMsg {
+  width: 350px;
+  height: 2.5rem;
+  border-style: none none none none;
+  border-radius: 10px;
+}
+.register .right .registerPageBtn {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.register .right .registerPageBtn .registerAccount {
+  background: black;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.register .right .registerPageBtn .logInBtn {
+  text-decoration: none;
+  margin: auto;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.logIn {
+  height: 100vh;
+  display: flex;
+  background-color: rgb(228, 182, 77);
+}
+.logIn .left {
+  background: url(../../picture/logInSinUp.jpg);
+  height: 100vh;
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logIn .right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 500px;
+  height: 50vh;
+  margin: auto;
+  align-items: center;
+}
+.logIn .right label {
+  font-size: 1.5rem;
+}
+.logIn .right .AccountMsg {
+  width: 350px;
+  height: 2.5rem;
+  border-style: none none none none;
+  border-radius: 10px;
+}
+.logIn .right .logInPageBtn {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logIn .right .logInPageBtn .logInAccount {
+  background: black;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.logIn .right .logInPageBtn .registerBtn {
+  text-decoration: none;
+  margin: auto;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.todoList {
+  background-color: rgb(228, 182, 77);
+  height: 100vh;
+}
+.todoList .nav {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+.todoList .nav .navLeft {
+  display: flex;
+}
+.todoList .nav .navLeft div {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  align-self: flex-end;
+}
+.todoList .nav .navRight .yourName {
+  font-size: 1.5rem;
+  margin-right: 40px;
+}
+.todoList .nav .navRight .logOutBtn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(85, 85, 85);
+}
+.todoList .main {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: auto;
+}
+.todoList .main .addTodoList {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  height: 3rem;
+}
+.todoList .main .addTodoList .txt {
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+.todoList .main .addTodoList .save {
+  position: absolute;
+  right: 10px;
+  font-size: 50px;
+}
+.todoList .main .allList {
+  margin-top: 10px;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+.todoList .main .allList .todoListTitle {
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.todoList .main .allList .list {
+  padding: 10px;
+}
+.todoList .main .allList .list li {
+  position: relative;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding-left: 50px;
+  border-bottom: 1px solid gray;
+  line-height: 3rem;
+}
+.todoList .main .allList .list li .delete {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.todoList .main .allList .list li .delete:hover {
+  color: red;
+}
+.todoList .main .allList .list li .checkbox {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav .navLeft {
+    margin: auto;
+  }
+  .nav .navRight {
+    margin: auto;
+    margin-top: 15px;
+  }
+  .nav .navRight .yourName {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

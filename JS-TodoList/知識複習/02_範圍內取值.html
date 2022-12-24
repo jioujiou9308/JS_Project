@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>02_範圍內取值</title>
+	</head>
+	<body>
+		<h2 class="title">
+			<span>標題內容</span>
+			<input type="button" value="檢視" class="view" />
+		</h2>
+	</body>
+	<script>
+		// 這裡要做的是希望點擊按鈕才取的到值
+		// 點擊 "標題內容的時候則無法取值"
+		// nodeName 是元素名稱
+		const title = document.querySelector('.title');
+		title.addEventListener('click', (e) => {
+			// console.log(e.target.nodeName);
+
+			// if (e.target.nodeName !== 'INPUT') {
+			// 	console.log('你點擊的不是我們要的目標');
+			// 	return;
+			// }
+			if (e.target.getAttribute('class') === 'view') {
+				console.log(e.target.value);
+			}
+		});
+	</script>
+</html>

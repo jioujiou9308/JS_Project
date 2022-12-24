@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+			integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Rubik+Bubbles&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/style/style.css" />
+	</head>
+	<body>
+		<div class="register none">
+			<div class="left"></div>
+			<div class="right">
+				<div style="font-size: 30px; font-weight: bolder; margin-bottom: 10px">註冊帳號</div>
+				<div>
+					<label for="email">Email</label>
+					<br />
+					<input type="text" id="email" class="AccountMsg" />
+				</div>
+				<div>
+					<label for="nickname">您的暱稱</label>
+					<br />
+					<input type="text" id="nickname" class="AccountMsg" />
+				</div>
+				<div>
+					<label for="password">密碼</label>
+					<br />
+					<input type="password" id="password" class="AccountMsg" />
+				</div>
+				<div>
+					<label for="passwordAgain">再次輸入密碼</label>
+					<br />
+					<input type="password" id="passwordAgain" class="AccountMsg" />
+				</div>
+				<div class="registerPageBtn">
+					<input type="button" value="註冊帳號" class="registerAccount" />
+					<p class="logInBtn" value="登入">登入</p>
+				</div>
+			</div>
+		</div>
+		<div class="logIn">
+			<div class="left"></div>
+			<div class="right">
+				<div style="font-size: 30px; font-weight: bolder; margin-bottom: 10px">最實用的線上待辦事項服務</div>
+				<div>
+					<label for="email">Email </label>
+					<br />
+					<input type="text" id="email" class="AccountMsg" />
+				</div>
+				<div>
+					<label for="password">密碼</label>
+					<br />
+					<input type="password" id="password" class="AccountMsg" />
+				</div>
+				<div class="logInPageBtn">
+					<input type="button" class="logInAccount" value="登入帳號" />
+					<p class="registerBtn" value="註冊畫面">註冊</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="todoList none">
+			<div class="nav">
+				<div class="navLeft">
+					<span class="material-symbols-outlined" style="font-size: 40px"> edit_document </span>
+					<div>ONLINE TODOLIST</div>
+				</div>
+				<div class="navRight">
+					<span class="yourName"></span>
+					<input type="button" class="logOutBtn" value="登出" />
+				</div>
+			</div>
+			<div class="main">
+				<div class="addTodoList">
+					<input type="text" class="txt" placeholder="請新增代辦事項" />
+					<span class="material-symbols-outlined save" style="cursor: pointer"> add_box </span>
+				</div>
+				<div class="allList">
+					<div class="todoListTitle">代辦事項</div>
+					<ul class="list"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="todoList.js"></script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="title" data-content="這是標題1" data-num="5">這是標題</div>
+	</body>
+	<script>
+		const title = document.querySelector('.title');
+		const dataTitle = title.getAttribute('data-content');
+		const dataNum = title.getAttribute('data-num');
+
+		function clickHandle(e) {
+			const dataN = e.target.dataset.num;
+			const dataT = e.target.dataset.content;
+			console.log(dataN, dataT);
+		}
+
+		title.addEventListener('click', clickHandle);
+		console.log(dataTitle);
+		console.log(dataNum);
+	</script>
+</html>

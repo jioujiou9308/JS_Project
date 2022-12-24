@@ -1,0 +1,499 @@
+@mixin img($img){
+    background-image: $img;
+    background-size: cover;
+    background-position: center;
+}
+@mixin before($content){
+    transition: all 0.5s;
+    content:$content;
+    position: absolute;
+    background: rgb(255, 217, 0);
+    padding: 5px 30px;
+    translate: -10px -10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+    }
+}
+.container_js30{
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; 
+        .title{
+            background:lightgreen;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 3rem;
+        }
+        .text{
+            width: 50vw;
+            margin: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .header_info{
+            white-space:nowrap;
+            // margin: 0 5px;
+            // display: flex;
+            // flex-wrap: nowrap;
+            a{
+                background: black;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px;
+                border-radius: 2px;
+                font-size: 1rem;
+                white-space:nowrap;
+            }
+        }
+    }
+    
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card{
+            width: 400px;
+            height: 450px;
+            margin: 30px;
+            transition: all 0.5s;
+            // border: 0.5px solid lightgray;
+            box-shadow: rgba(0, 0, 0, 0.379) 0px 1px 4px;
+            &:hover{
+                box-shadow: 2px 2px 10px ;
+               
+            }
+            .content{
+                width: 100%;
+                height: 70%;
+                background: lightblue;
+            }
+            .intro{
+                width: 100%;
+                background: white;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items:center;
+                .missionName{
+                    text-align: center;
+                    p {
+                        padding: 5px 0;
+                    }
+                }
+                .btn{
+                    margin-bottom: 10px;
+                    a{
+                        padding: 15px 35px;
+                        background: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    
+        .card1{
+            .img1{
+                @include img(url(../img/1.png))
+            }
+            &:before{
+                @include before('#1')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+    
+            }
+            }
+           
+        }
+        .card2{
+            .img2{
+                @include img(url(../img/2.png))
+            }
+            &:before{
+                @include before('#2')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card3{
+            .img3{
+                @include img(url(../img/3.png))
+            }
+            &:before{
+                @include before('#3')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card4{
+            .img4{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#4')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card5{
+            .img5{
+                @include img(url(../img/5.png))
+            }
+            &:before{
+                @include before('#5')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card6{
+            .img6{
+                @include img(url(../img/6.png))
+            }
+            &:before{
+                @include before('#6')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card7{
+            .img7{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#7')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card8{
+            .img8{
+                @include img(url(../img/8.png))
+            }
+            &:before{
+                @include before('#8')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card9{
+            .img9{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#9')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card10{
+            .img10{
+                @include img(url(../img/10.png))
+            }
+            &:before{
+                @include before('#10')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card11{
+            .img11{
+                @include img(url(../img/11.png))
+            }
+            &:before{
+                @include before('#11')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card12{
+            .img12{
+                @include img(url(../img/12.png))
+            }
+            &:before{
+                @include before('#12')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card13{
+            .img13{
+                @include img(url(../img/13.png))
+            }
+            &:before{
+                @include before('#13')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card14{
+            .img14{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#14')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card15{
+            .img15{
+                @include img(url(../img/15.png))
+            }
+            &:before{
+                @include before('#15')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card16{
+            .img16{
+                @include img(url(../img/16.png))
+            }
+            &:before{
+                @include before('#16')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card17{
+            .img17{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#17')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card18{
+            .img18{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#18')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card19{
+            .img19{
+                @include img(url(../img/19.png))
+            }
+            &:before{
+                @include before('#19')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card20{
+            .img20{
+                @include img(url(../img/20.png))
+            }
+            &:before{
+                @include before('#20')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card21{
+            .img21{
+                @include img(url(../img/21.png))
+            }
+            &:before{
+                @include before('#21')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card22{
+            .img22{
+                @include img(url(../img/22.png))
+            }
+            &:before{
+                @include before('#22')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card23{
+            .img23{
+                @include img(url(../img/23.png))
+            }
+            &:before{
+                @include before('#23')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card24{
+            .img24{
+                @include img(url(../img/24.png))
+            }
+            &:before{
+                @include before('#24')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card25{
+            .img25{
+                @include img(url(../img/0.png))
+            }
+            &:before{
+                @include before('#25')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card26{
+            .img26{
+                @include img(url(../img/26.png))
+            }
+            &:before{
+                @include before('#26')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card27{
+            .img27{
+                @include img(url(../img/27.png))
+            }
+            &:before{
+                @include before('#27')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card28{
+            .img28{
+                @include img(url(../img/28.png))
+            }
+            &:before{
+                @include before('#28')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card29{
+            .img29{
+                @include img(url(../img/29.png))
+            }
+            &:before{
+                @include before('#29')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+        .card30{
+            .img30{
+                @include img(url(../img/30.png))
+            }
+            &:before{
+                @include before('#30')
+            }
+            &:hover{
+                &:before{
+                    padding: 10px 40px;  
+                }
+            }
+        }
+    }
+}
+

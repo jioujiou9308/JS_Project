@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="box">
+			<h1 class="title">
+				<span>標題1</span>
+				<input type="button" value="檢視1" />
+			</h1>
+			<h1 class="title">
+				<span>標題2</span>
+				<input type="button" value="檢視2" />
+			</h1>
+			<h1 class="title">
+				<span>標題3</span>
+				<input type="button" value="檢視3" />
+			</h1>
+		</div>
+		<div class="h1"></div>
+	</body>
+	<script>
+		// 六角的做法
+		const area = document.querySelector('.box');
+		const h1 = document.querySelector('h1');
+		area.addEventListener('click', (e) => {
+			console.log(e.target.nodeName);
+			console.log(this);
+		});
+
+		// 我的作法是取所有包含[class="title"]的元素
+		// const boxTitle = Array.from(document.querySelectorAll('[class="title"]'));
+		// boxTitle.map((title) => {
+		// 	title.addEventListener('click', (e) => {
+		// 		if (e.target.nodeName === 'INPUT') {
+		// 			console.log(e.target.value);
+		// 		}
+		// 	});
+		// });
+	</script>
+</html>

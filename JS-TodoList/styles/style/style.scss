@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+.register {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(228, 182, 77);
+   .left{
+    background: url(../../picture/logInSinUp.jpg);
+    height: 100vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .right{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    height: 50vh;
+    margin: auto;
+    align-items: center;
+    label{
+        font-size: 1.5rem;
+    }
+    .AccountMsg{
+        width: 350px;
+        height: 2.5rem;
+        border-style: none none none none;
+        border-radius: 10px;
+    }
+    .registerPageBtn{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+       .registerAccount{
+        background: black;
+        color: white;
+        padding: 10px 40px ;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+       }
+       
+       .logInBtn{
+        text-decoration: none;
+        margin: auto;
+        color: black;
+        font-size: 1rem;
+        cursor: pointer;
+
+       }
+    }
+   }
+}
+.logIn {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(228, 182, 77);
+   .left{
+    background: url(../../picture/logInSinUp.jpg);
+    height: 100vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .right{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+    height: 50vh;
+    margin: auto;
+    align-items: center;
+    label{
+        font-size: 1.5rem;
+    }
+    .AccountMsg{
+        width: 350px;
+        height: 2.5rem;
+        border-style: none none none none;
+        border-radius: 10px;
+    }
+    .logInPageBtn{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .logInAccount{
+            background: black;
+            color: white;
+            padding: 10px 40px ;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .registerBtn{
+            text-decoration: none;
+            margin: auto;
+            color: black;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+}
+
+.todoList {
+    background-color: rgb(228, 182, 77);
+    height: 100vh;
+    .nav{
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+        .navLeft{
+            display: flex;
+            div{
+                font-size: 1.5rem;
+                margin-left: 15px;
+                align-self: flex-end;
+            }
+        }
+        .navRight{
+            .yourName{
+                font-size: 1.5rem;
+                margin-right: 40px;
+                
+            }
+            .logOutBtn{
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: rgb(85, 85, 85);
+            }
+        }
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        margin: auto;
+
+        .addTodoList{
+        margin: auto;
+        width: 100%;
+        position: relative;
+        height: 3rem;
+        .txt{
+            width: 100%;
+            height: 2rem;
+            border-radius: 5px;
+            border: none;
+            height: 3rem;
+            font-size: 1.5rem;
+            padding-left: 20px;
+
+        }
+        .save{
+            position: absolute;
+            right: 10px;
+            font-size: 50px;
+        }
+        }
+        .allList{
+        margin-top: 10px;
+        background-color: white;
+        width: 100%;
+        border-radius: 5px;
+        .todoListTitle{
+            border-bottom: 1px solid black;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .list{
+            padding: 10px;
+            li{
+                position: relative;
+                height: 3rem;
+                font-size: 1.5rem;
+                padding-left: 50px;
+                border-bottom: 1px solid gray;
+                line-height: 3rem;
+                .delete{
+                    font-size: 30px;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    &:hover{
+                        color: red;
+                    }
+                }
+                .checkbox{
+                    width: 2rem;
+                    height: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 10px;
+                }
+            }
+        }
+
+        }
+    }
+}
+
+
+.none {
+    display: none;
+}
+
+@media (max-width: 576px){
+    .nav{
+        flex-direction: column;
+        .navLeft{
+            margin: auto;
+        }
+        .navRight{
+            margin: auto;
+            margin-top: 15px;
+            .yourName{
+                display: none;
+            }
+        }
+    }
+}
